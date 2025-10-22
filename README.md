@@ -15,6 +15,7 @@ Componenti Principali
 1. Agenti AI (crew.py)
 
 Ricercatore: Esegue query SELECT per visualizzare dati
+
 Modificatore: Gestisce INSERT, UPDATE, DELETE
 RAG Agent: Fornisce informazioni da documenti esterni (disabilitato di default)
 
@@ -37,4 +38,5 @@ check_sql_tool: Valida la correttezza delle query SQL
 Prevenzione di allucinazioni
 Controllo del contesto
 Limitazione delle risposte a informazioni verificabili
+
 
