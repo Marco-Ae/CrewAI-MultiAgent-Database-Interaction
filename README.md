@@ -14,10 +14,12 @@ Utilizzare guardrail per prevenire allucinazioni e mantenere il contesto
 Componenti Principali
 1. Agenti AI (crew.py)
 
+il Router gestisce:
+
 Ricercatore: Esegue query SELECT per visualizzare dati
 
 Modificatore: Gestisce INSERT, UPDATE, DELETE
-RAG Agent: Fornisce informazioni da documenti esterni (disabilitato di default)
+RAG Agent: Fornisce informazioni da documenti esterni
 
 2. Flow System (main.py)
 
@@ -38,5 +40,6 @@ check_sql_tool: Valida la correttezza delle query SQL
 Prevenzione di allucinazioni
 Controllo del contesto
 Limitazione delle risposte a informazioni verificabili
+
 
 
