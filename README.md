@@ -1,6 +1,6 @@
 ﻿# CrewAI-MultiAgent-Database-Interaction
 
-Flight Database Management System 🛫
+Flight Database Management System
 Sistema intelligente basato su CrewAI per la gestione di un database di prenotazioni voli tramite agenti AI che utilizzano linguaggio naturale.
 ****Descrizione****
 Questo progetto implementa un sistema multi-agente che permette di:
@@ -37,3 +37,4 @@ check_sql_tool: Valida la correttezza delle query SQL
 Prevenzione di allucinazioni
 Controllo del contesto
 Limitazione delle risposte a informazioni verificabili
+
