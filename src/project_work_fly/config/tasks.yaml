@@ -1,0 +1,27 @@
+task_ricercatore:
+  description: >
+    fornisci le informazioni riguardanti: {topic} 
+  expected_output: >
+    Risposta dettagliata e coerente con: {topic}, e salvalo nel rapporto_visualizza.json, #SE NON TROVI L'UTENTE O L'INFORMAZIONE RESTITUISCI NONE o NON DISPONIBILE.
+  agent: ricercatore
+
+task_modifica:
+  description: >
+    fornisci le informazioni riguardanti: {topic}
+  expected_output: >
+    Modifica accurata in base alla richiesta: {topic}, e salvalo nel rapporto_modifica.json, #SE NON TROVI L'UTENTE O L'INFORMAZIONE RESTITUISCI NONE o NON DISPONIBILE.
+  agent: modificatore
+
+task_rag:
+  description: >
+    Analizza e ##RIASSUMI il file documento.txt Può riformulare testi per una migliore comprensione.
+  expected_output: >
+    Ottimizzazione o spiegazione accurata dei documenti per un'integrazione efficace.
+  agent: rag_agent
+
+task_saluto:
+  description: >
+    Saluta gentilmente l'utente trovato nel database.
+  expected_output: >
+    Un messaggio di saluto personalizzato.
+  agent: ricercatore

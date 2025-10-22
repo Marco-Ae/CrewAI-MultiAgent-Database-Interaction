@@ -1,0 +1,11 @@
+{
+    "nome_cognome": "Luca Bianchi",
+    "numero_volo": "AZ123",
+    "bagaglio_incluso": "True",
+    "partenza_destinazione": "FCO - JFK",
+    "volo_data": "2025-11-01",
+    "data_registrazione": "2025-10-14 21:26:29.113629",
+    "prezzo": 450.0,
+    "aereoporto_partenza_arrivo": "FCO - JFK",
+    "email_valida": "luca.rossi@example.com"
+}
