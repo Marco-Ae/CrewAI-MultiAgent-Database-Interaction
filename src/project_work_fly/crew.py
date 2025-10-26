@@ -16,7 +16,7 @@ from project_work_fly.rag_tool import tool_rag
 from project_work_fly.guardrail import model, context_guardrail, llm
 
 
-db = SQLDatabase.from_uri(database_uri = "postgresql://postgres:admin@localhost:5432/volo", schema="public")
+db = SQLDatabase.from_uri(database_uri = "db path url", schema="public")
     
 
 @tool("list_tables")
@@ -143,7 +143,7 @@ class ProjectVolo():
         task = Task(
             config=self.tasks_config['task_ricercatore'],
             output_pydantic = SQLmodel,
-            output_file = "E:\\crewai_ambienti\\project_work\\project_work_fly\\logs\\rapporto_visualizza.json",
+            output_file = "save file path",
             guardrail = context_guardrail
         )
 
@@ -154,7 +154,7 @@ class ProjectVolo():
         task = Task(
             config=self.tasks_config['task_modifica'], 
             output_pydantic = SQLmodel,
-            output_file = "E:\\crewai_ambienti\\project_work\\project_work_fly\\logs\\rapporto_modifica.json",
+            output_file = "save file path",
             guardrail = context_guardrail
         )
 
@@ -164,7 +164,7 @@ class ProjectVolo():
     def task_rag(self):
         task = Task(
             config=self.tasks_config['task_rag'], 
-            output_file = "E:\\crewai_ambienti\\project_work\\project_work_fly\\logs\\informazioni_per_utente.md",
+            output_file = "save file path",
             tools = [tool_rag],
             guardrail = context_guardrail
         )
