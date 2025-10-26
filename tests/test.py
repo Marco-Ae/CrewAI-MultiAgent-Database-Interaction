@@ -16,7 +16,7 @@ from datetime import datetime
 
 
 
-load_dotenv("C:\\Users\\Abate\\Desktop\\project_work\\project_volo\\.env")
+load_dotenv("env path")
 api_key_gemini = os.getenv('GOOGLE_API_KEY')
 
 
@@ -27,7 +27,7 @@ llm = LLM(
         temperature = 0.5,
         )  
 
-db = SQLDatabase.from_uri(database_uri = "postgresql://postgres:admin@localhost:5432/Voli", schema="public")
+db = SQLDatabase.from_uri(database_uri = "dburl path", schema="public")
 
 # Tool CrewAI
 @tool("list_tables")
